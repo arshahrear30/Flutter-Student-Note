@@ -82,5 +82,71 @@ name: Shaharear
 position: Admin
 country: Bangladesh
 
+**Nested Maps**
+
+void main() {  // A Map containing another Map
+ Map<String, dynamic> userProfile = {
+ 'id': 17070,
+ 'username': 'arshahrear30',
+ 'contact': {'email': 'arshahrear30@gmail.com', 'phone': '1234567890'}
+ };
+ var userEmail = userProfile['contact']['email'];
+ print(userEmail); 
+};
+
+Output : arshahrear30@gmail.com
+
+**Spread Operator**
+
+void main() {
+  Map<String, dynamic> address = {
+    'street': '1236 Donli road',
+    'city': 'Huhu',
+    'zip': '4567',
+  };
+
+ Map<String, dynamic> userProfile = {
+    'id': '707',
+    'username': 'arshahrear30',
+    ...address,
+  };
+
+  print(userProfile);
+}
+
+My Explain : ei 3 dot hoilo ekta operator ..eitar maddomey purber address variable ar sokol key value ei userProfile er shatey add hoibo ..
+
+Output : {id: 707, username: arshahrear30, street: 1236 Donli road, city: Huhu, zip: 4567}
+
+## Collection-If ##
+
+void main() {
+  bool isAdmin = false;  //  bool isAdmin = true;
+
+  Map<String, dynamic> adminInfo = {
+    'name': 'Alice',
+    'role': 'admin',
+    'permissions': ['read', 'write', 'delete'], //List
+  };
+
+  Map<String, dynamic> address = {
+    'street': '123 Main St',
+    'city': 'Anytown',
+    'zip': '12345',
+  };
+
+  Map<String, dynamic> userProfile = {
+    'id': 101,
+    'username': 'dart_master',
+    'address': {...address},  // A Map containing another Map
+    if (isAdmin) 'adminDetails': adminInfo,
+  };
+
+  print(userProfile);
+}
+
+false Output : {id: 101, username: dart_master, address: {street: 123 Main St, city: Anytown, zip: 12345}}
+
+true Output : {id: 101, username: dart_master, address: {street: 123 Main St, city: Anytown, zip: 12345}, adminDetails: {name: Alice, role: admin, permissions: [read, write, delete]}}
 
 
