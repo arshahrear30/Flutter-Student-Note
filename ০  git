@@ -1,0 +1,20 @@
+Git -যেটা আমাদের code history control করে , local  pc  তে control .
+Github - এটা cloud platform যেখানে প্রতিটা project respository /folder/file   হিসেবে রাখা হয়. কোড শেয়ার টিমের সাথে কাজ করার জন্য ব্যাবহৃত হয়। 
+Write code - যে file create করছেন সেগুলোকে select করে রাখা - এগুলোকে মেসেজ দিয়ে save করা- push  করা 
+Cmd check ->  git -- version 
+Android studio  তে GUI  - Grapical usar interface  এর মাধ্যমে বাটন চেপে কাজ করতে পারবেন।   কিন্তু vs code  এ code  লিখতে হবে।   
+github  open করা দেখাও - two  fact auth  কেমনে করবো।  recovery  code  দিয়ে করা যায়।   
+
+As -> VCS -> Git use করবো। 
+Repo - Private to  Public  
+# Git  clone #
+- Android studio  এর project new flutter project বাম পাশে :এ get from version control কারোটা করতে চাইলে URL :এ Url  দিবো।
+
+POLL : Team  এ ৪-৫ জন থাকলে একেক জন একেক সময়ে কাজ করে।  
+এখন local pc  git code একরকম github এ আরেকজন push  করচে তাহলে সেখানে আরেকরকম কিন্তু project  তো একই।  
+নতুন code  লিখার  আগে check github যদি কেউ code  push  করে তাহলে check  করে আমার local project ও অ্যাড করা।  আর না হয় পরে যখন আমি পুশ করতে যাবো তখন marge  হবে।  আর এই change করাটাকে বলে pull ।
+git  pull  origin  marster এটা লিখলে কেউ github এ চেঞ্জ /পুশ করলে  সেটা আমার local git / project  এ update হয়ে যাবে।   
+main , master autometic initifalite হয়ে যায়।   যখন android studio  দিয়ে project  create  করবেন CLI  দিয়ে অর্থাৎ github আমার repo  code  দিয়ে ও করতে পারবো সেটাকে CLI  বলে।   
+RAM VS ROM 
+Flutter App কেনে জায়গায় use  হয়।  Google  meterial এ এর জিনিসগুলো icon , Flutter install and  Flutter এ file এর android ios lib  , folder  সম্পর্কে পরিচয় করানো।  
+activity vs  widgets .
